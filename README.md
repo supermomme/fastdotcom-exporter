@@ -25,7 +25,7 @@ scrape_configs:
   - job_name: 'fastdotcom'
     metrics_path: /metrics
     scrape_interval: 15m # running speedtest every 15 minutes
-    scrape_timeout: 60s # running speedtest needs time to complete
+    scrape_timeout: 90s # running speedtest needs time to complete
     static_configs:
       - targets: ['fastdotcom:9696']
 ```
