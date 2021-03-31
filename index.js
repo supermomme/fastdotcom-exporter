@@ -25,7 +25,8 @@ fastdotcom_megabits_per_second{direction="downstream"} ${data.downloadSpeed}
 fastdotcom_megabits_per_second{direction="upstream"} ${data.uploadSpeed}`)
     console.log('speedtest end')
   } catch (error) {
-    res.sendStatus(500)
+    console.log(error)
+    res.status(500).send(error)
   }
 })
 

@@ -6,7 +6,7 @@ Inspired by [speedtest-exporter](https://github.com/nlamirault/speedtest_exporte
 `docker pull supermomme/fastdotcom-exporter`
 
 ### Docker Run
-`docker run -p 9696:9696 --restart always supermomme/fastdotcom-exporter`
+`docker run -d -p 9696:9696 --restart always supermomme/fastdotcom-exporter`
 
  ### Docker Compose
 ```yaml
